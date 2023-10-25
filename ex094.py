@@ -28,3 +28,10 @@ for c in range(0, len(lista_pessoas)):
         mulheres.append(lista_pessoas[c]['nome'])
 print(f'As mulheres são: {mulheres}.')
 
+# idade acima da media
+comparador = idades_media
+maiores_media = []
+for c in range(0, len(lista_pessoas)):
+    if lista_pessoas[c]['idade'] > comparador:
+        maiores_media.append(lista_pessoas[c]['nome'])
+print(f'As pessoas com idade acima da média são: {maiores_media}')
