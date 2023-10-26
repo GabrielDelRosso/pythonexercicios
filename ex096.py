@@ -3,7 +3,7 @@ def linha():
 
 
 def area(largura, comprimento):
-    area_terreno = l * c
+    area_terreno = largura * comprimento
     print(f'A area do terreno é {area_terreno}')
 
 
