@@ -18,4 +18,5 @@ def voto(ano):
 
 
 # Programa Principal
-voto(1940)
+pegar = int(input('Em que ano você nasceu? '))
+voto(pegar)
