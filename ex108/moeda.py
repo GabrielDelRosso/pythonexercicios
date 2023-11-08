@@ -16,3 +16,9 @@ def dobro(n):
 def metade(n):
     dividir = n / 2
     return dividir
+
+
+def moeda(valor):
+    num = f'R$ {valor}'
+    formata_num = num.replace('.', ',')
+    return formata_num
