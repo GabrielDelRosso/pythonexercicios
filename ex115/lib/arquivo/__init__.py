@@ -1,3 +1,6 @@
+from ex115.lib.interface import *
+
+
 def arquivoexiste(nome):
     try:
         a = open(nome, 'rt')
@@ -17,3 +20,12 @@ def criararquivo(nome):
     else:
         print(f'Arquivo {nome} criado com sucesso!')
 
+
+def lerarquivo(nome):
+    try:
+        a = open(nome, 'rt')
+    except:
+        print('Erro ao ler arquivo!')
+    else:
+        cabecalho('PESSOAS CADASTRADAS')
+        print(a.readlines())
