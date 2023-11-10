@@ -1,4 +1,9 @@
-import urllib3
+import requests
 
 try:
-    teste = urllib3.request().geturl()
+    site = input('Insira o link: ')
+    check = requests.get(site)
+except:
+    print('Site offline.')
+else:
+    print('Site acessível.')
