@@ -26,8 +26,8 @@ def menu(lista):
     cabecalho('MENU PRINCIPAL')
     c = 1
     for item in lista:
-        print(f'{c} - {item}')
+        print(f'\033[33m{c} - \033[34m{item}\033[m')
         c = c + 1
     print(linha())
-    opc = leiaint('Sua opção: ')
+    opc = leiaint('\033[32mSua opção: \033[m')
     return opc
