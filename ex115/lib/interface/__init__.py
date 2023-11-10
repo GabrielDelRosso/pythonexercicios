@@ -31,3 +31,5 @@ def menu(lista):
     print(linha())
     opc = leiaint('\033[32mSua opção: \033[m')
     return opc
+
+

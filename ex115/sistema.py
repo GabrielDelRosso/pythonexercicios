@@ -1,5 +1,15 @@
 from ex115.lib.interface import *
+from ex115.lib.arquivo import *
 from time import sleep
+
+arq = 'cursoemvideo.txt'
+
+if arquivoexiste(arq):
+    print('Arquivo encontrado!')
+else:
+    print('Arquivo não existe!')
+    criararquivo(arq)
+#08:40
 
 cabecalho('Sistema Arquivo v1.0')
 while True:
